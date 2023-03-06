@@ -10,7 +10,11 @@ const APIData =  await fetchData();
 const Dashboard:FC = () => {
   const [chosenShape, setChosenShape] = useState<ShapeDetails>(null);
 
-  const showDetails= (shapeName:string):void => {
+  /** showDetails method causes prop drilling down to table row - 
+  * bad design as we store fetched data on a high level -> needs to be moved into a custom hook or better -> State manager (redux)
+  * */
+
+  const showDetails = (shapeName:string):void => {
     if (APIData) {
        const foundShape = APIData.objects.filter(shape => shape.name === shapeName);
        setChosenShape(foundShape[0]);

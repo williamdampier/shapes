@@ -1,9 +1,11 @@
 import { IShape } from "../types/Shape"
 
-//In theory we could implement switch case statement, I haven't had time to think it through carefully
+//In theory we could implement switch-case statement, I haven't had time to think it through carefully
 
 export function getShapeValue (shape:IShape):string {
+    // destructure needed properties from the object
     const {height, width, length } = shape;
+
 // If the height is both greater than double the width, and greater than double the length: Tall
     if (height > (width * 2) && height > (length * 2) ) return "Tall";
 
