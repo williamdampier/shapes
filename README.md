@@ -19,5 +19,6 @@ NPM should also work:
 4. From composition point of view - table cells and list items can be moved to a separate component to make future tests run on smaller (and easier to debug) scale
 5. Better types structure to avoid checking if components exist in high level components
 6. Bonus features - sorting and filtering based on "ignore" property in API data
+7. Tests...
 
 
