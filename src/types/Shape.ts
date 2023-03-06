@@ -11,3 +11,5 @@ export interface APIDataResponse {
     ignoreShapes: string[];
     liquidDensity: number;
 }
+
+export type ShapeDetails = IShape | null;
