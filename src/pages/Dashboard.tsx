@@ -4,7 +4,7 @@ import ShapesTable from '../components/ShapesTable/ShapesTable';
 import { ShapeDetails } from '../types/Shape';
 import ShapesDescription from '../components/ShapesDescription/ShapesDescription';
 
-// raw and unhandled API fetch - should've use custom React hook or Redux (preferred choice)
+// raw and unhandled API fetch - should've use custom React hook or Redux (preferred choice) or fetch inside useEfeect as an option
 const APIData =  await fetchData();
 
 const Dashboard:FC = () => {
